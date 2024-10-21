@@ -26,11 +26,12 @@
 1. **Clone o repositório:** git clone https://github.com/victorgirard1/pokedex.git  
 2. **Coloque o projeto dentro do diretório:** C:\xampp\htdocs  
 3. **Instale as dependências no diretório do projeto, execute no bash:** npm install  
-4. **Crie um banco de dados no postgres com a tabela:** CREATE TABLE usuarios (
-    id SERIAL PRIMARY KEY,           -- ID autoincremental para identificar o usuário
-    nome_usuario VARCHAR(50) NOT NULL, -- Nome de usuário (máximo 50 caracteres)
-    senha VARCHAR(100) NOT NULL,      -- Senha do usuário (pode armazenar hash da senha)
+4. **Crie um banco de dados no postgres com a tabela:**
+CREATE TABLE usuarios (  
+id SERIAL PRIMARY KEY,           -- ID autoincremental para identificar o usuário  
+nome_usuario VARCHAR(50) NOT NULL, -- Nome de usuário (máximo 50 caracteres)  
+senha VARCHAR(100) NOT NULL,      -- Senha do usuário (pode armazenar hash da senha)  
 );  
-5. **Na pasta do projeto:** altere o arquivo index.js que está dentro da pasta node e coloque seu usário do postgres, o nome do seu banco de dados, e a sua senha do postgres.  
-6. **Iniciar o servidor local:** Inicie o Apache Server para subir o servidor local  
-7. **No diretório do projeto execute no bash:** node index.js 
+6. **Na pasta do projeto:** altere o arquivo index.js que está dentro da pasta node e coloque seu usuário do postgres, o nome do seu banco de dados, e a sua senha do postgres.  
+7. **Iniciar o servidor local:** Inicie o Apache Server para subir o servidor local  
+8. **No diretório do projeto execute no bash:** node index.js 
