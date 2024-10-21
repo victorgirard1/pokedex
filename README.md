@@ -21,10 +21,10 @@
 **-PostgreSQL:** Para criação das tabelas
 **-NPM:** Para instalar as dependências do projeto
 
-## Bibliotecas e Frameworks
+## Bibliotecas e Frameworks Utilizados (Já estão no arquivo json, só necessário dar npm install)
 
-**-npm install express** (Framework)  
-**-npm install pg** (Biblioteca)
+**npm install express** (Framework)  
+**npm install pg** (Biblioteca)
 
 ## Como Executar o Projeto
 
