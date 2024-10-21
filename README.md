@@ -17,9 +17,9 @@
 
 ## Requisitos
 **-Node.js:** Versão 14.x ou superior  
-**-XAMPP:** Para gerenciar o servidor local e o banco de dados PostgreSQL
-**-PostgreSQL:** Para criação das tabelas
-**-NPM:** Para instalar as dependências do projeto
+**-XAMPP:** Para gerenciar o servidor local e o banco de dados PostgreSQL   
+**-PostgreSQL:** Para criação das tabelas  
+**-NPM:** Para instalar as dependências do projeto  
 
 ## Bibliotecas e Frameworks Utilizados
 ### As bibliotecas já estão listadas no arquivo package.json, bastando executar o comando npm install para instalar todas as dependências:  
