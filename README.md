@@ -22,7 +22,7 @@
 **-NPM:** Para instalar as dependências do projeto  
 
 ## Bibliotecas e Frameworks Utilizados
-### As bibliotecas já estão listadas no arquivo package.json, bastando executar o comando npm install para instalar todas as dependências:  
+### As bibliotecas já estão listadas no arquivo package.json, bastando executar o comando npm install no diretório do projeto para instalar todas as dependências:  
 
 **npm install express** (Framework)  
 **npm install pg** (Biblioteca)
