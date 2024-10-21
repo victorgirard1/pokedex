@@ -17,7 +17,6 @@
 
 ## Requisitos
 **-Node.js:** Versão 14.x ou superior  
-<<<<<<< HEAD
 **-XAMPP:** Para gerenciar o servidor local e o banco de dados PostgreSQL
 **-PostgreSQL:** Para criação das tabelas
 **-NPM:** Para instalar as dependências do projeto
@@ -35,8 +34,3 @@
 5. **Na pasta do projeto:** altere o arquivo index.js que está dentro da pasta node e coloque seu usário do postgres, o nome do seu banco de dados, e a sua senha do postgres.  
 6. **Iniciar o servidor local:** Inicie o Apache Server para subir o servidor local  
 7. **No diretório do projeto execute no bash:** node index.js 
-=======
-**-XAMPP:** Para gerenciar o servidor local e o banco de dados PostgreSQL  
-**-PostgreSQL:** Instalado e configurado no XAMPP  
-**-NPM:** Para instalar as dependências do projeto  
->>>>>>> 7d8fa4383e062636c11891b06cc3551e002ddb08
