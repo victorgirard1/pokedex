@@ -23,7 +23,7 @@
 
 ## Bibliotecas e Frameworks
 
-**-npm install express** (Framework)
+**-npm install express** (Framework)  
 **-npm install pg** (Biblioteca)
 
 ## Como Executar o Projeto
