@@ -40,7 +40,8 @@ nome_usuario VARCHAR(50) NOT NULL, -- Nome de usuário (máximo 50 caracteres)
 senha VARCHAR(100) NOT NULL,      -- Senha do usuário (pode armazenar hash da senha)  
 );  
 **e depois insira para teste esse usuario** INSERT INTO usuarios (nome_usuario, senha) VALUES ('usuarioteste', 'senha123');  
-6. **Configurar o arquivo de conexão:** No arquivo index.js (localizado na pasta node), altere os dados de conexão com o PostgreSQL. Adicione seu usuário, senha e nome do banco de dados PostgreSQL  
-7. **Iniciar o servidor local:** Abra o painel do XAMPP e inicie o Apache para subir o servidor local.  
-8. **No diretório do projeto, execute o seguinte comando para iniciar o servidor Node.js**: node index.js
-9. **Colocar no browser:** http://localhost:3000/login
+6. **Configurar php.ini:** No diretório C:\xampp\php abra o arquivo php.ini com o Notepad encontre as linhas que contém ;extension=pgsql e ;extension=pdo_pgsql e remova o ponto e vírgula (;) e salve o arquivo
+7. **Configurar o arquivo de conexão:** No arquivo index.js (localizado na pasta node), altere os dados de conexão com o PostgreSQL. Adicione seu usuário, senha e nome do banco de dados PostgreSQL.
+8. **Iniciar o servidor local:** Abra o painel do XAMPP e inicie o Apache para subir o servidor local.  
+9. **No diretório do projeto, execute o seguinte comando para iniciar o servidor Node.js**: node index.js
+10. **Colocar no browser:** http://localhost:3000/login
