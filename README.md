@@ -38,8 +38,9 @@ CREATE TABLE usuarios (
 id SERIAL PRIMARY KEY,           -- ID autoincremental para identificar o usuário  
 nome_usuario VARCHAR(50) NOT NULL, -- Nome de usuário (máximo 50 caracteres)  
 senha VARCHAR(100) NOT NULL,      -- Senha do usuário (pode armazenar hash da senha)  
-);  **e depois insira para teste esse usuario** INSERT INTO usuarios (nome_usuario, senha) VALUES ('usuarioteste', 'senha123');  
-5. **Configurar o arquivo de conexão:** No arquivo index.js (localizado na pasta node), altere os dados de conexão com o PostgreSQL. Adicione seu usuário, senha e nome do banco de dados PostgreSQL  
-6. **Iniciar o servidor local:** Abra o painel do XAMPP e inicie o Apache para subir o servidor local.  
-7. **Rodar o servidor Node.js:** No diretório do projeto, execute o seguinte comando para iniciar o servidor Node.js
-8. **Colocar no browser:** http://localhost:3000/login
+);  
+**e depois insira para teste esse usuario** INSERT INTO usuarios (nome_usuario, senha) VALUES ('usuarioteste', 'senha123');  
+6. **Configurar o arquivo de conexão:** No arquivo index.js (localizado na pasta node), altere os dados de conexão com o PostgreSQL. Adicione seu usuário, senha e nome do banco de dados PostgreSQL  
+7. **Iniciar o servidor local:** Abra o painel do XAMPP e inicie o Apache para subir o servidor local.  
+8. **Rodar o servidor Node.js:** No diretório do projeto, execute o seguinte comando para iniciar o servidor Node.js
+9. **Colocar no browser:** http://localhost:3000/login
