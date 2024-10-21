@@ -26,7 +26,7 @@
 1. **Clone o repositório:** git clone https://github.com/victorgirard1/pokedex.git  
 2. **Coloque o projeto dentro do diretório:** C:\xampp\htdocs  
 3. **Instale as dependências no diretório do projeto, execute no bash:** npm install  
-4. **Crie um banco de dados no postgres com a tabela:**
+4. **Crie um banco de dados no postgres com a tabela:**  
 CREATE TABLE usuarios (  
 id SERIAL PRIMARY KEY,           -- ID autoincremental para identificar o usuário  
 nome_usuario VARCHAR(50) NOT NULL, -- Nome de usuário (máximo 50 caracteres)  
