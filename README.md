@@ -21,6 +21,11 @@
 **-PostgreSQL:** Para criação das tabelas
 **-NPM:** Para instalar as dependências do projeto
 
+## Bibliotecas e Frameworks
+
+**-npm install express** (Framework)
+**-npm install pg** (Biblioteca)
+
 ## Como Executar o Projeto
 
 1. **Clone o repositório:** git clone https://github.com/victorgirard1/pokedex.git  
