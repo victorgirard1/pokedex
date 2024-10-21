@@ -42,5 +42,5 @@ senha VARCHAR(100) NOT NULL,      -- Senha do usuário (pode armazenar hash da s
 **e depois insira para teste esse usuario** INSERT INTO usuarios (nome_usuario, senha) VALUES ('usuarioteste', 'senha123');  
 6. **Configurar o arquivo de conexão:** No arquivo index.js (localizado na pasta node), altere os dados de conexão com o PostgreSQL. Adicione seu usuário, senha e nome do banco de dados PostgreSQL  
 7. **Iniciar o servidor local:** Abra o painel do XAMPP e inicie o Apache para subir o servidor local.  
-8. **Rodar o servidor Node.js:** No diretório do projeto, execute o seguinte comando para iniciar o servidor Node.js
+8. **No diretório do projeto, execute o seguinte comando para iniciar o servidor Node.js**: node index.js
 9. **Colocar no browser:** http://localhost:3000/login
