@@ -4,15 +4,15 @@
 
 ## A aplicação foi construída com as seguintes tecnologias
 
-**- Frontend:**  
-HTML5, CSS3 e JavaScript  
-**- Backend:**  
-**Node.js** para fornecer o ambiente de execução para o servidor.  
-Framework **Express** para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.  
-O pacote **Node-Postgres** (pg) para permitir a comunicação com o banco de dados PostgreSQL, realizando consultas e manipulando dados persistentes.  
-**NPM** (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js para instalar as dependências do projeto (express, pg).  
+**Front-end:**  
+- HTML5, CSS3 e JavaScript  
+**Backend:**  
+- Node.js para fornecer o ambiente de execução para o servidor.  
+- Framework Express para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.  
+- O pacote Node-Postgres (pg) para permitir a comunicação com o banco de dados PostgreSQL, realizando consultas e manipulando dados persistentes.  
+- NPM (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js para instalar as dependências do projeto (express, pg).  
 **- Banco de Dados:**  
-PostgreSQL para fornecer a estrutura e as ferramentas necessárias para armazenar, acessar e manipular os dados da sua aplicação de forma eficiente e segura.
+- PostgreSQL para fornecer a estrutura e as ferramentas necessárias para armazenar, acessar e manipular os dados da sua aplicação de forma eficiente e segura.
 
 ## Funcionalidades  
 
@@ -20,11 +20,6 @@ PostgreSQL para fornecer a estrutura e as ferramentas necessárias para armazena
 **- Cadastro de Usuário:** Página de registro para novos usuários com validação de dados.  
 **- Login de Usuário:** Página de login com autenticação segura utilizando algoritmo hash sha-256. Somente usuários registrados podem acessar a Pokedex.  
 **- Pokedex:** Página acessível após o login, onde o usuário pode pesquisar por qualquer Pokémon e obter detalhes como nome, tipo, habilidades e estatísticas.  
-
-## Requisitos
-**-Node.js:** Versão 20.17.0  
-**-PostgreSQL:** Para criação do banco de dados.  
-**-NPM:** Para instalar as dependências do projeto (express, pg).
 
 ## Como Executar o Projeto
 ### Siga os passos abaixo para configurar e rodar o projeto em sua máquina local:
