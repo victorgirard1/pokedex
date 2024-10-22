@@ -32,9 +32,20 @@
       <label for="password">Senha:</label>
       <input type="password" id="password" name="password" required />
       <br><br>
-      
+
+      <p id="errorMessage" style="color: red;"></p>
       <button type="submit" aria-label="Entrar no sistema">Entrar</button>
     </form>
+
+  <!--Função para aparecer mensagem de erro caso a pessoa esse o login ou senha-->
+    <script>
+      const params = new URLSearchParams(window.location.search);
+      const error = params.get('error');
+      if (error) {
+        document.getElementById('errorMessage').textContent = error;
+      }
+    </script>
+
     <p class="pbody">Não tem uma conta?<a href="../html/cadastro.html">Cadastre-se aqui.</a></p>
 
 <div class="botao_tema">

@@ -38,7 +38,7 @@ app.post('/login', async (req, res) => {
     if (result.rows.length > 0) {
       res.redirect('/html/home.html'); // Redireciona para a página 'home.html' dentro da pasta 'public/html'
     } else {
-      res.send('Usuário ou senha inválidos.');
+      res.redirect('/html/login.html?error=Usuário ou senha inválidos.');
     }
   } catch (err) {
     console.error('Erro ao consultar o banco de dados', err);
