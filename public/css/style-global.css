@@ -7,6 +7,33 @@
     font-family: 'Oxanium', cursive;
 }
 
+body{
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: #212121;
+    min-height: 100vh;
+    transition: .5s;
+    box-sizing: border-box;
+}
+
+.pbody{
+    color: #fff;
+}
+
+h1{
+    color: #fff;
+    font-size: 1.0em;
+}
+
+label{
+    color: #fff;
+}
+
+
 /* Estilo da barra de navegação */
 .navbar {
     position: fixed; /* Fixa a barra no topo */
@@ -94,6 +121,16 @@ body.dark h1{
 }
 
 body.dark label{
+    color: #000;
+    transition: .5s;
+}
+
+body.dark .pbody{
+    color: #000;
+    transition: .5s;
+}
+
+body.dark{
     color: #000;
     transition: .5s;
 }
