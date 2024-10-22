@@ -2,24 +2,26 @@
 
 ## O 4Poke é uma aplicação web com uma Pokédex interativa, desenvolvida com foco em praticar conceitos de autenticação, banco de dados e consumo de APIs. A aplicação conta com uma página inicial informativa, e permite que usuários se cadastrem, façam login e, após autenticados, possam buscar informações sobre diferentes Pokémon na Pokédex.
 
-## A aplicação foi construída com as seguintes tecnologias
+## A aplicação foi construída com as seguintes tecnologias  
 
-**Front-end:**  
-- HTML5, CSS3 e JavaScript  
-**Backend:**  
-- Node.js para fornecer o ambiente de execução para o servidor.  
-- Framework Express para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.  
-- O pacote Node-Postgres (pg) para permitir a comunicação com o banco de dados PostgreSQL, realizando consultas e manipulando dados persistentes.  
-- NPM (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js para instalar as dependências do projeto (express, pg).  
-**- Banco de Dados:**  
-- PostgreSQL para fornecer a estrutura e as ferramentas necessárias para armazenar, acessar e manipular os dados da sua aplicação de forma eficiente e segura.
+- **Front-end:**  
+\- HTML5, CSS3 e JavaScript  
+
+- **Back-end:**  
+\- Node.js para fornecer o ambiente de execução para o servidor.  
+\- Framework Express para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.  
+\- O pacote Node-Postgres (pg) para permitir a comunicação com o banco de dados PostgreSQL, realizando consultas e manipulando dados persistentes.  
+\- NPM (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js para instalar as dependências do projeto (express, pg).  
+
+- **Banco de Dados:**  
+\- PostgreSQL para fornecer a estrutura e as ferramentas necessárias para armazenar, acessar e manipular os dados da sua aplicação de forma eficiente e segura.
 
 ## Funcionalidades  
 
-**- Tela de Início:** Página com algumas informações úteis de pokémons. 
-**- Cadastro de Usuário:** Página de registro para novos usuários com validação de dados.  
-**- Login de Usuário:** Página de login com autenticação segura utilizando algoritmo hash sha-256. Somente usuários registrados podem acessar a Pokedex.  
-**- Pokedex:** Página acessível após o login, onde o usuário pode pesquisar por qualquer Pokémon e obter detalhes como nome, tipo, habilidades e estatísticas.  
+- **Tela de Início:** Página com algumas informações úteis de pokémons. 
+- **Cadastro de Usuário:** Página de registro para novos usuários com validação de dados.  
+- **Login de Usuário:** Página de login com autenticação segura utilizando algoritmo hash sha-256. Somente usuários registrados podem acessar a Pokedex.  
+- **Pokedex:** Página acessível após o login, onde o usuário pode pesquisar por qualquer Pokémon e obter detalhes como nome, tipo, habilidades e estatísticas.  
 
 ## Como Executar o Projeto
 ### Siga os passos abaixo para configurar e rodar o projeto em sua máquina local:
