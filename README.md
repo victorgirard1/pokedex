@@ -7,11 +7,12 @@
 **- Frontend:**  
 HTML5, CSS3 e JavaScript  
 **- Backend:**  
-Node.js para fornecer o ambiente de execução para o servidor.
-Framework Express.js para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.
-O pacote Node-Postgres (pg) para permitir a comunicação com o banco de dados PostgreSQL, realizando consultas e manipulando dados persistentes.  
+**Node.js** para fornecer o ambiente de execução para o servidor.  
+Framework **Express** para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.  
+O pacote **Node-Postgres** (pg) para permitir a comunicação com o banco de dados PostgreSQL, realizando consultas e manipulando dados persistentes.  
+**NPM** (Node Package Manager) é o gerenciador de pacotes padrão para o ambiente de execução Node.js para instalar as dependências do projeto (express, pg).  
 **- Banco de Dados:**  
-PostgreSQL  
+PostgreSQL para fornecer a estrutura e as ferramentas necessárias para armazenar, acessar e manipular os dados da sua aplicação de forma eficiente e segura.
 
 ## Funcionalidades  
 
