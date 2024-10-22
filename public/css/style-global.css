@@ -24,8 +24,11 @@
     justify-content: flex-end; /* Alinha os itens à direita */
 }
 
-.navbar li {
-    /* Remova o flex: 1; para evitar que os itens ocupem o espaço disponível */
+.navbar img.logo {
+    width: 50px; /* Define a largura da logo */
+    height: auto; /* Mantém a proporção da imagem */
+    margin-right: auto; /* Adiciona margem à direita para afastar os itens da lista */
+    justify-content: space-between;
 }
 
 .navbar a {

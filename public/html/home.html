@@ -1,67 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="../images/favicon-16x16.png">
+  <link rel="stylesheet" type="text/css" href="../css/style-login.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-global.css">
 
-    <!-- muda o ícone da guia -->
-    <link rel="icon" href="../images/favicon-16x16.png"> 
-    <link rel="stylesheet" type="text/css" href="../css/style-home.css">
-    <link rel="stylesheet" type="text/css" href="../css/style-global.css">
-
-    <!-- defer pq foi importado antes do body -->
-    <script defer src="../js/apiConnection.js"></script>
-
-    <title>4Poke - Home</title>
+  <title>4Poke - Login</title>
 </head>
 <body>
 
         <!-- Barra de Navegação -->
         <nav class="navbar">
-            <ul>
-              <li><a href="#">Início</a></li>
-              <li><a href="#">Pokedex</a></li>
-              <li><a href="#">Informações</a></li>
-              <li><a href="#">Contato</a></li>
-              <li><a href="#">Login/Criar Conta</a></li>
-            </ul>
-          </nav>
-    
-    <main>
-        <!-- imagem do pokemon -->
-        <img src="#" alt="Pokemon" class="poke_img">
+          <ul>
+            <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
+            <li><a href="http://127.0.0.1:5501/public/html/home.html">Início</a></li>
+            <li><a href="http://127.0.0.1:5501/public/html/pokedex.html">Pokédex</a></li>
+            <li><a href="http://127.0.0.1:5501/public/html/cadastro.html#">Cadastro</a></li>
+            <li><a href="http://127.0.0.1:5501/public/html/login.html#">Login</a></li>
+          </ul>
+        </nav>
 
-        <!-- exibição de nome e id do pokemon-->
-        <h1 class="poke_data">
-            <span class="poke_num"></span> -
-            <span class="poke_name"></span>
-        </h1>
+      <h1>Início da sua jornada pokémon!</h1>
 
-        <!-- área de pesquisa do pokemon -->
-        <form class="form">
-            <input 
-            type="search" class="input_search"
-            placeholder="Nome ou número"
-            required
-            >
-        </form>
+<div class="botao_tema">
+  <div class="trilho" id="trilho">
+    <div class="indicador"></div>
+  </div>
+</div> 
 
-        <!-- Botões para avançar e voltar pokemons -->
-        <div class="buttons">
-            <button class="button btn-prev">Prev &lt;</button>
-            <button class="button btn-next">Next &gt;</button>
-        </div>
+  <script src="../js/darkMode.js"></script>
 
-        <!-- imagem da pokedex -->
-        <img src="../images/pokedex.png" alt="Pokedex" class="pokedex">
-    </main>
-
-    <footer class="rodape">
-        <div class="texto_rodape">
-            <p>©2024 4Poke - Todos os direitos reservados.</p>
-            <p>Desenvolvido por: Victor Girardi</p>
-        </div>
-    </footer>
-
+  <footer class="rodape">
+    <div class="texto_rodape">
+      <p>©2024 4Poke - Todos os direitos reservados.</p>
+      <p>Desenvolvido por: Victor Girardi</p>
+    </div>
+  </footer>
 </body>
 </html>
