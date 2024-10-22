@@ -7,27 +7,38 @@
   <!-- muda o ícone da guia -->
   <link rel="icon" href="../images/favicon-16x16.png">
   <link rel="stylesheet" type="text/css" href="../css/style-login.css">
-  <link rel="stylesheet" type="text/css" href="../css/global.css">
+  <link rel="stylesheet" type="text/css" href="../css/style-global.css">
   
   <title>4Poke - Login</title>
 </head>
 <body>
-  <h1>Login</h1>
-  
-  <form action="/login" method="POST">
-    <label for="username">Usuário:</label>
-    <input type="text" id="username" name="username" required />
-    <br><br>
-    
-    <label for="password">Senha:</label>
-    <input type="password" id="password" name="password" required />
-    <br><br>
-    
-    <button type="submit" aria-label="Entrar no sistema">Entrar</button>
-  </form>
 
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#">Pokedex</a></li>
+        <li><a href="#">Informações</a></li>
+        <li><a href="#">Contato</a></li>
+        <li><a href="#">Login/Criar Conta</a></li>
+      </ul>
+    </nav>
 
-<div class="conteiner">
+      <h1>Login</h1>
+    
+    <form action="/login" method="POST">
+      <label for="username">Usuário:</label>
+      <input type="text" id="username" name="username" required />
+      <br><br>
+      
+      <label for="password">Senha:</label>
+      <input type="password" id="password" name="password" required />
+      <br><br>
+      
+      <button type="submit" aria-label="Entrar no sistema">Entrar</button>
+    </form>
+
+<div class="botao_tema">
   <h1>Modo Dark e Modo Light</h1>
   <div class="trilho" id="trilho">
     <div class="indicador"></div>
@@ -37,7 +48,10 @@
   <script src="../js/darkMode.js"></script>
 
   <footer class="rodape">
-    <p>©2024 4Poke - Todos os direitos reservados. Deselvolvido por: Victor Girardi</p>
+    <div class="texto_rodape">
+      <p>©2024 4Poke - Todos os direitos reservados.</p>
+      <p>Desenvolvido por: Victor Girardi</p>
+    </div>
   </footer>
 </body>
 </html>

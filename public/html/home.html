@@ -6,7 +6,8 @@
 
     <!-- muda o ícone da guia -->
     <link rel="icon" href="../images/favicon-16x16.png"> 
-    <link rel="stylesheet" type="text/css" href="../css/style-index.css">
+    <link rel="stylesheet" type="text/css" href="../css/style-home.css">
+    <link rel="stylesheet" type="text/css" href="../css/style-global.css">
 
     <!-- defer pq foi importado antes do body -->
     <script defer src="../js/apiConnection.js"></script>
@@ -14,6 +15,17 @@
     <title>4Poke - Home</title>
 </head>
 <body>
+
+        <!-- Barra de Navegação -->
+        <nav class="navbar">
+            <ul>
+              <li><a href="#">Início</a></li>
+              <li><a href="#">Pokedex</a></li>
+              <li><a href="#">Informações</a></li>
+              <li><a href="#">Contato</a></li>
+              <li><a href="#">Login/Criar Conta</a></li>
+            </ul>
+          </nav>
     
     <main>
         <!-- imagem do pokemon -->
@@ -43,6 +55,13 @@
         <!-- imagem da pokedex -->
         <img src="../images/pokedex.png" alt="Pokedex" class="pokedex">
     </main>
+
+    <footer class="rodape">
+        <div class="texto_rodape">
+            <p>©2024 4Poke - Todos os direitos reservados.</p>
+            <p>Desenvolvido por: Victor Girardi</p>
+        </div>
+    </footer>
 
 </body>
 </html>

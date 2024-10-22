@@ -33,7 +33,7 @@ app.post('/login', async (req, res) => {
     );
 
     if (result.rows.length > 0) {
-      res.redirect('http://localhost/pokedex/public/html/index.html')
+      res.redirect('http://localhost/pokedex/public/html/home.html')
     } else {
       res.send('Usuário ou senha inválidos.');
     }

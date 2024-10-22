@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oxanium', cursive;
+}
+
+/* Estilo da barra de navegação */
+.navbar {
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Alinha a barra ao topo */
+    width: 100%; /* Largura total */
+    background-color: black; /* Fundo preto */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove as marcas de lista */
+    margin: 0; /* Remove margens */
+    padding: 0; /* Remove preenchimentos */
+    display: flex; /* Utiliza Flexbox para dispor os itens em linha */
+    justify-content: flex-end; /* Alinha os itens à direita */
+}
+
+.navbar li {
+    /* Remova o flex: 1; para evitar que os itens ocupem o espaço disponível */
+}
+
+.navbar a {
+    display: block; /* Para que o link ocupe toda a área do li */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 14px 20px; /* Preenchimento interno, adicione mais espaço lateral se necessário */
+    text-decoration: none; /* Remove o sublinhado */
+    transition: background-color 0.3s; /* Adiciona uma transição suave */
+}
+
+.navbar a:hover {
+    background-color: rgb(202, 7, 49); /* Cor ao passar o mouse */
+    color: white; /* Mantém a cor do texto ao passar o mouse */
+}
+
+/* Adiciona margem ao conteúdo abaixo da barra de navegação */
+.container {
+    margin-top: 60px; /* Deixa espaço para a barra de navegação */
+}
+
+/*Fim do estolo para barra de navegação */
+
+/*Estilo para Darkmode*/
+
+.trilho{
+    width: 80px;
+    height: 40px;
+    background-color: #4d4d4d;
+    border-radius: 150px;
+    position: relative;
+    cursor: pointer;
+}
+
+.trilho .indicador{
+    width: 40px;
+    height: 40px;
+    background-color: #000;
+    border-radius: 50%;
+    transform: scale(.9);
+    position: absolute;
+    left: 0;
+    transition: .5s;
+}
+
+.trilho.dark{
+    background-color: #c3c3c3;
+}
+
+
+.trilho.dark .indicador{
+    left: 40px;
+    background-color: #ffff;
+}
+
+body.dark{
+    background-color: #e4e4e4;
+}
+
+body.dark h1{
+    color: #000;
+    transition: .5s;
+}
+
+body.dark label{
+    color: #000;
+    transition: .5s;
+}
+
+/*Fim do estilo para Darkmode*/
+
+/* Estilo para o rodapé */
+
+.rodape {
+    position: fixed; /* Para manter a barra sempre no final da página */
+    bottom: 0; /* Gruda no final da tela */
+    width: 100%; /* Ocupa toda a largura */
+    height: 5%;
+    background-color: rgb(202, 7, 49); /* Cor de fundo vermelha */
+    text-align: center; /* Centraliza o texto */
+    color: white; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno para o texto */
+    font-size: 15px; /* Tamanho da fonte */
+    z-index: 1000; /* Garante que fique acima de outros elementos */
+}
+
+.texto_rodape {
+    line-height: 1.1;
+}
+
+/*Fim do estilo para rodapé */
