@@ -8,7 +8,8 @@
 
 \- HTML5, CSS3 e JavaScript  
 
-- **Back-end:**  
+- **Back-end:**   
+
 \- Node.js para fornecer o ambiente de execução para o servidor.  
 
 \- Framework Express para facilitar a criação de rotas e o gerenciamento de requisições e respostas, servindo arquivos estáticos e manipulando dados de formulários.  
