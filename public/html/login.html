@@ -7,41 +7,41 @@
   <link rel="stylesheet" type="text/css" href="../css/style-login.css">
   <link rel="stylesheet" type="text/css" href="../css/style-global.css">
 
-      <!-- Importa o music.js para controle da música -->
-      <script src="../js/music.js" defer></script>
-  
+  <!-- Importa o music.js para controle da música -->
+  <script src="../js/music.js" defer></script>
+
   <title>4Poke - Login</title>
 </head>
 <body>
 
-        <!-- Barra de Navegação -->
-        <nav class="navbar">
-          <ul>
-            <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
-            <li><a href="http://localhost:3000/html/home.html">Início</a></li>
-            <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
-            <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
-            <li><a href="http://localhost:3000/html/login.html">Login</a></li>
-            <li><button class="pause-btn" id="pausePlayBtn">Pause</button></li>
-          </ul>
-        </nav>
+  <!-- Barra de Navegação -->
+  <nav class="navbar">
+    <ul>
+      <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
+      <li><a href="http://localhost:3000/html/home.html">Início</a></li>
+      <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
+      <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
+      <li><a href="http://localhost:3000/html/login.html">Login</a></li>
+      <li><button class="pause-btn" id="pausePlayBtn">Pause Music</button></li>
+    </ul>
+  </nav>
 
-      <h1>Login</h1>
+  <!-- Caixa branca para o conteúdo do login -->
+  <div class="container"> 
+    <h1>Login</h1>
     
-    <form action="/login" method="POST">
+    <form class="login-form" action="/login" method="POST">
       <label for="username">Usuário:</label>
       <input type="text" id="username" name="username" required />
-      <br><br>
       
       <label for="password">Senha:</label>
       <input type="password" id="password" name="password" required />
-      <br><br>
 
       <p id="errorMessage" style="color: red;"></p>
       <button type="submit" aria-label="Entrar no sistema">Entrar</button>
     </form>
 
-  <!--Função para aparecer mensagem de erro caso a pessoa esse o login ou senha-->
+    <!-- Função para aparecer mensagem de erro caso a pessoa esse o login ou senha -->
     <script>
       const params = new URLSearchParams(window.location.search);
       const error = params.get('error');
@@ -52,12 +52,13 @@
 
     <p class="pbody">Não tem uma conta?<a href="../html/cadastro.html">Cadastre-se aqui.</a></p>
 
-<div class="botao_tema">
-  <h1>Modo Dark e Modo Light</h1>
-  <div class="trilho" id="trilho">
-    <div class="indicador"></div>
-  </div>
-</div> 
+    <div class="botao_tema">
+      <h1>Modo Dark e Modo Light</h1>
+      <div class="trilho" id="trilho">
+        <div class="indicador"></div>
+      </div>
+    </div> 
+  </div> <!-- Fechando a div container -->
 
   <script src="../js/darkMode.js"></script>
 
@@ -68,8 +69,8 @@
     </div>
   </footer>
 
-    <!-- Elemento de áudio com id para controle da música -->
-    <audio id="backgroundMusic" src="../music/pokemon.mp3" loop></audio>
+  <!-- Elemento de áudio com id para controle da música -->
+  <audio id="backgroundMusic" src="../music/pokemon.mp3" loop></audio>
 
 </body>
 </html>

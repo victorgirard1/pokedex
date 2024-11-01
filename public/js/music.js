@@ -10,10 +10,10 @@ music.play();
 const toggleMusic = () => {
   if (music.paused) {
     music.play();
-    pauseButton.textContent = 'Pause';
+    pauseButton.textContent = 'Pause Music';
   } else {
     music.pause();
-    pauseButton.textContent = 'Play';
+    pauseButton.textContent = 'Play Music';
   }
 };
 

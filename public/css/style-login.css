@@ -1,37 +1,100 @@
-h1{
-    color: #fff;
-    font-size: 1.0em;
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Caixa branca com leve transparência */
+    border-radius: 15px; /* Aumenta o arredondamento dos cantos */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais suave e difusa */
+    padding: 40px; /* Preenchimento interno */
+    width: 90%; /* Largura da caixa */
+    max-width: 400px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    margin: 80px auto; /* Centraliza a caixa na tela */
+    animation: fadeIn 0.5s; /* Animação ao aparecer */
 }
 
-label{
-    color: #fff;
+.container {
+    background-color: rgba(255, 255, 255, 0.9); /* Caixa branca com leve transparência */
+    border-radius: 15px; /* Aumenta o arredondamento dos cantos */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais suave e difusa */
+    padding: 40px; /* Preenchimento interno */
+    width: 90%; /* Largura da caixa */
+    max-width: 400px; /* Largura máxima */
+    text-align: center; /* Centraliza o texto */
+    animation: fadeIn 0.5s; /* Animação ao aparecer */
 }
 
-
-
-.form{
-    position: absolute;
-    width: 65%;
-    top: 65%;
-    left: 13.5%;
+/* Animação de Fade In */
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Começa invisível */
+        transform: translateY(-20px); /* Move um pouco para cima */
+    }
+    to {
+        opacity: 1; /* Termina visível */
+        transform: translateY(0); /* Retorna à posição original */
+    }
 }
 
-.input_search{
-    width: 100%;
-    padding: 5%;
-    /* tira o contorno quando coloca o mouse */
-    outline: none;
-    border: 2px solid #333;
-    /* arrendonda borda */
-    border-radius: 7px;
-    font-weight: 600;
-    color: #3a444d;
-    font-size: clamp(8px, 5vw, 1rem);
-
-    /* recriando borda igual da pokedex */
-    
-    box-shadow: -3px 3px 0 #727272, -5px 6px 0 #333;
+/* Estilo do título */
+h1 {
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    color: #212121; /* Cor do título */
+    font-weight: 600; /* Título em negrito */
+    font-size: 24px; /* Tamanho do título */
 }
 
+/* Estilo das labels */
+label {
+    display: block; /* Faz os labels ocuparem toda a linha */
+    margin: 10px 0 5px; /* Espaçamento */
+    color: #333; /* Cor do texto */
+}
 
-/*DARK MODE*/
+/* Estilo dos inputs */
+input {
+    width: 100%; /* Largura total */
+    padding: 12px; /* Preenchimento interno */
+    border: 1px solid #ccc; /* Borda padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    margin-bottom: 15px; /* Espaço abaixo dos inputs */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+}
+
+/* Foco nos inputs */
+input:focus {
+    border-color: #fdc94c; /* Cor da borda ao focar */
+    box-shadow: 0 0 5px rgba(253, 201, 76, 0.5); /* Sombra ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+/* Estilo do botão */
+button {
+    background-color: #e29b15; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none; /* Remove borda padrão */
+    padding: 12px 20px; /* Preenchimento interno do botão */
+    border-radius: 5px; /* Cantos arredondados */
+    cursor: pointer; /* Muda o cursor ao passar */
+    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
+    width: 100%; /* Largura total do botão */
+}
+
+/* Hover no botão */
+button:hover {
+    background-color: #c77a12; /* Cor ao passar o mouse */
+    transform: translateY(-2px); /* Levanta o botão levemente ao passar o mouse */
+}
+
+/* Estilo do parágrafo */
+.pbody {
+    margin-top: 20px; /* Espaço acima do parágrafo */
+}
+
+/* Estilo do link no parágrafo */
+.pbody a {
+    color: #e29b15; /* Cor do link */
+    text-decoration: none; /* Remove sublinhado */
+}
+
+/* Hover no link do parágrafo */
+.pbody a:hover {
+    text-decoration: underline; /* Sublinha ao passar o mouse */
+}

@@ -1,13 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500;600;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
 }
 
-body{
+body {
     display: flex;
     height: 100vh;
     justify-content: center;
@@ -16,30 +16,31 @@ body{
     flex-direction: column;
     background-color: #212121;
     min-height: 100vh;
-    transition: .5s;
-    box-sizing: border-box;
+    background-image: url('../images/background-pikachus.webp'); /* Caminho para a imagem de fundo */
+    background-repeat: repeat; /* Faz a imagem se repetir */
+    transition: background-image 0.1s ease-in-out;
+    background-position: center; /* Centraliza a imagem (pode ser removido, já que a imagem vai se repetir) */
 }
 
-.pbody{
-    color: #fff;
+.pbody {
+    color: #000;
 }
 
-h1{
-    color: #fff;
+h1 {
+    color: #000;
     font-size: 1.0em;
 }
 
-label{
-    color: #fff;
+label {
+    color: #000;
 }
-
 
 /* Estilo da barra de navegação */
 .navbar {
     position: fixed; /* Fixa a barra no topo */
     top: 0; /* Alinha a barra ao topo */
     width: 100%; /* Largura total */
-    background-color: black; /* Fundo preto */
+    background: linear-gradient(to right, #e29b15, #fdc94c); /* Degradê do laranja para o amarelo */
     z-index: 1000; /* Garante que a barra fique acima de outros elementos */
 }
 
@@ -48,14 +49,14 @@ label{
     margin: 0; /* Remove margens */
     padding: 0; /* Remove preenchimentos */
     display: flex; /* Utiliza Flexbox para dispor os itens em linha */
-    justify-content: flex-end; /* Alinha os itens à direita */
+    justify-content: center; /* Centraliza os itens */
+    align-items: center; /* Alinha os itens verticalmente ao centro (opcional) */
 }
 
 .navbar img.logo {
     width: 50px; /* Define a largura da logo */
     height: auto; /* Mantém a proporção da imagem */
-    margin-right: auto; /* Adiciona margem à direita para afastar os itens da lista */
-    justify-content: space-between;
+    margin-right: 20px; /* Adiciona margem à direita para afastar a logo dos itens da lista */
 }
 
 .navbar a {
@@ -72,16 +73,14 @@ label{
     color: white; /* Mantém a cor do texto ao passar o mouse */
 }
 
+
 /* Adiciona margem ao conteúdo abaixo da barra de navegação */
 .container {
     margin-top: 60px; /* Deixa espaço para a barra de navegação */
 }
 
-/*Fim do estolo para barra de navegação */
-
-/*Estilo para Darkmode*/
-
-.trilho{
+/* Estilo para Darkmode */
+.trilho {
     width: 80px;
     height: 40px;
     background-color: #4d4d4d;
@@ -90,7 +89,7 @@ label{
     cursor: pointer;
 }
 
-.trilho .indicador{
+.trilho .indicador {
     width: 40px;
     height: 40px;
     background-color: #000;
@@ -101,50 +100,35 @@ label{
     transition: .5s;
 }
 
-.trilho.dark{
+.trilho.dark {
     background-color: #c3c3c3;
 }
 
-
-.trilho.dark .indicador{
+.trilho.dark .indicador {
     left: 40px;
     background-color: #ffff;
 }
 
-body.dark{
+body.dark {
     background-color: #e4e4e4;
 }
 
-body.dark h1{
-    color: #000;
-    transition: .5s;
+body.dark h1,
+body.dark label,
+body.dark .pbody {
+    color: #e4e4e4;
+    transition: .1s;
 }
 
-body.dark label{
-    color: #000;
-    transition: .5s;
-}
-
-body.dark .pbody{
-    color: #000;
-    transition: .5s;
-}
-
-body.dark{
-    color: #000;
-    transition: .5s;
-}
-
-/*Fim do estilo para Darkmode*/
+/* Fim do estilo para Darkmode */
 
 /* Estilo para o rodapé */
-
 .rodape {
     position: fixed; /* Para manter a barra sempre no final da página */
     bottom: 0; /* Gruda no final da tela */
     width: 100%; /* Ocupa toda a largura */
     height: 5%;
-    background-color: rgb(202, 7, 49); /* Cor de fundo vermelha */
+    background-color: rgb(0, 0, 0); /* Cor de fundo vermelha */
     text-align: center; /* Centraliza o texto */
     color: white; /* Cor do texto */
     padding: 10px 0; /* Espaçamento interno para o texto */
@@ -156,20 +140,20 @@ body.dark{
     line-height: 1.1;
 }
 
-/*Fim do estilo para rodapé */
+/* Fim do estilo para rodapé */
 
-/* Estilo do botão moderno */
+/* Estilo do botão moderno (pause-btn) */
 .pause-btn {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    transition: 0.3s;
+    display: block; /* Para que o link ocupe toda a área do li */
+    color: white; /* Cor do texto */
+    text-align: center; /* Centraliza o texto */
+    padding: 14px 20px; /* Preenchimento interno igual aos outros botões */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 5px; /* Opcional: igualar a borda aos outros links */
+    transition: background-color 0.3s; /* Transição suave ao passar o mouse */
 }
 
 .pause-btn:hover {
-    background-color: #45a049;
+    background-color: rgb(202, 7, 49); /* Cor ao passar o mouse */
 }
+
