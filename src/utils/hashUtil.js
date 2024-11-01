@@ -1,9 +1,11 @@
+// src/utils/hashUtil.js
 const CryptoJS = require('crypto-js');
 
-// Texto de entrada para hash
-const text = 'Exemplo de texto';
+// Função para gerar o hash SHA-256
+const hashPassword = (password) => {
+    return CryptoJS.SHA256(password).toString();
+};
 
-// Gerando o hash SHA-256
-const hash = CryptoJS.SHA256(text).toString();
-
-console.log('Hash SHA-256:', hash);
+module.exports = {
+    hashPassword,
+};

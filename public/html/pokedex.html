@@ -10,21 +10,25 @@
     <!-- defer pq foi importado antes do body -->
     <script defer src="../js/apiConnection.js"></script>
 
+    <!-- Importa o music.js para controle da música -->
+    <script src="../js/music.js" defer></script>
+
     <title>4Poke - Home</title>
 </head>
 <body>
 
-        <!-- Barra de Navegação -->
-        <nav class="navbar">
-            <ul>
-                <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
-                <li><a href="http://localhost:3000/html/home.html">Início</a></li>
-                <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
-                <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
-                <li><a href="http://localhost:3000/html/login.html">Login</a></li>
-            </ul>
-        </nav>
-    
+    <!-- Barra de Navegação -->
+    <nav class="navbar">
+        <ul>
+            <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
+            <li><a href="http://localhost:3000/html/home.html">Início</a></li>
+            <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
+            <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
+            <li><a href="http://localhost:3000/html/login.html">Login</a></li>
+            <li><button class="pause-btn" id="pausePlayBtn">Pause</button></li>
+        </ul>
+    </nav>
+
     <main>
         <!-- imagem do pokemon -->
         <img src="#" alt="Pokemon" class="poke_img">
@@ -60,6 +64,9 @@
             <p>Desenvolvido por: Victor Girardi</p>
         </div>
     </footer>
+
+    <!-- Elemento de áudio com id para controle da música -->
+    <audio id="backgroundMusic" src="../music/pokemon.mp3" loop></audio>
 
 </body>
 </html>

@@ -157,3 +157,19 @@ body.dark{
 }
 
 /*Fim do estilo para rodapé */
+
+/* Estilo do botão moderno */
+.pause-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.pause-btn:hover {
+    background-color: #45a049;
+}
