@@ -18,7 +18,7 @@ body {
     min-height: 100vh;
     background-image: url('../images/background-pikachus.webp'); /* Caminho para a imagem de fundo */
     background-repeat: repeat; /* Faz a imagem se repetir */
-    transition: background-image 0.1s ease-in-out;
+    transition: background-image 0.5s;
     background-position: center; /* Centraliza a imagem (pode ser removido, já que a imagem vai se repetir) */
 }
 
@@ -73,40 +73,41 @@ label {
     color: white; /* Mantém a cor do texto ao passar o mouse */
 }
 
+.music-control-icon {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 17px;
+    margin-top: 10px;
+}
 
 /* Adiciona margem ao conteúdo abaixo da barra de navegação */
 .container {
     margin-top: 60px; /* Deixa espaço para a barra de navegação */
 }
 
-/* Estilo para Darkmode */
 .trilho {
     width: 80px;
     height: 40px;
-    background-color: #4d4d4d;
+    background-color: #f9d074; /* Cor pastel para o trilho */
     border-radius: 150px;
     position: relative;
     cursor: pointer;
-}
-
-.trilho .indicador {
-    width: 40px;
-    height: 40px;
-    background-color: #000;
-    border-radius: 50%;
-    transform: scale(.9);
-    position: absolute;
-    left: 0;
-    transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    transition: background-color 0.5s;
 }
 
 .trilho.dark {
-    background-color: #c3c3c3;
+    background-color: #494949; /* Cor pastel para o modo escuro */
+    justify-content: flex-end;
 }
 
-.trilho.dark .indicador {
-    left: 40px;
-    background-color: #ffff;
+.theme-icon {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
 }
 
 body.dark {
@@ -120,20 +121,38 @@ body.dark .pbody {
     transition: .1s;
 }
 
+@keyframes swing {
+    0% { transform: translateX(0); }
+    50% { transform: translateX(10px); } /* Movendo um pouco para o lado */
+    100% { transform: translateX(0); }
+}
+
+.theme-icon {
+    width: 35px;
+    height: 35px;
+    transition: 0.3s;
+}
+
+.theme-icon.swing {
+    animation: swing 0.3s ease-in-out; /* Aplica o efeito de balanço */
+}
+
 /* Fim do estilo para Darkmode */
 
 /* Estilo para o rodapé */
 .rodape {
-    position: fixed; /* Para manter a barra sempre no final da página */
-    bottom: 0; /* Gruda no final da tela */
-    width: 100%; /* Ocupa toda a largura */
+    position: fixed;
+    bottom: 0;
+    left: 0; /* Adiciona alinhamento à esquerda */
+    right: 0; /* Adiciona alinhamento à direita */
+    width: 100%;
     height: 5%;
-    background-color: rgb(0, 0, 0); /* Cor de fundo vermelha */
-    text-align: center; /* Centraliza o texto */
-    color: white; /* Cor do texto */
-    padding: 10px 0; /* Espaçamento interno para o texto */
-    font-size: 15px; /* Tamanho da fonte */
-    z-index: 1000; /* Garante que fique acima de outros elementos */
+    background-color: rgb(0, 0, 0);
+    text-align: center;
+    color: white;
+    padding: 10px 0;
+    font-size: 15px;
+    z-index: 1000;
 }
 
 .texto_rodape {

@@ -22,7 +22,13 @@
       <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
       <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
       <li><a href="http://localhost:3000/html/login.html">Login</a></li>
-      <li><button class="pause-btn" id="pausePlayBtn">Pause Music</button></li>
+      <li><div class="botao_tema">
+        <div class="trilho" id="trilho">
+            <img id="themeIcon" src="../images/pikachu.png" alt="Ícone do tema" class="theme-icon">
+        </div>
+    </div>
+<li><img src="../images/speaker1.png" alt="Controlador de Música" id="musicControlIcon" class="music-control-icon" /></li>
+</li>
     </ul>
   </nav>
 
@@ -51,22 +57,16 @@
     </script>
 
     <p class="pbody">Não tem uma conta? <a href="../html/cadastro.html">Cadastre-se aqui.</a></p>
-
-    <div class="botao_tema">
-      <div class="trilho" id="trilho">
-        <div class="indicador"></div>
-      </div>
-    </div> 
-  </div> <!-- Fechando a div container -->
+    
 
   <script src="../js/darkMode.js"></script>
 
   <footer class="rodape">
     <div class="texto_rodape">
-      <p>©2024 4Poke - Todos os direitos reservados.</p>
-      <p>Desenvolvido por: Victor Girardi</p>
+        <p>©2024 4Poke - Todos os direitos reservados.</p>
+        <p>Desenvolvido por: Victor Girardi</p>
     </div>
-  </footer>
+</footer>
 
   <!-- Elemento de áudio com id para controle da música -->
   <audio id="backgroundMusic" src="../music/pokemon.mp3" loop></audio>

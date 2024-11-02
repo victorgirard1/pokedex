@@ -14,17 +14,23 @@
 </head>
 <body>
 
-            <!-- Barra de Navegação -->
-            <nav class="navbar">
-                <ul>
-                    <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
-                    <li><a href="http://localhost:3000/html/home.html">Início</a></li>
-                    <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
-                    <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
-                    <li><a href="http://localhost:3000/html/login.html">Login</a></li>
-                    <li><button class="pause-btn" id="pausePlayBtn">Pause Music</button></li>
-                </ul>
-            </nav>
+  <!-- Barra de Navegação -->
+  <nav class="navbar">
+    <ul>
+        <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
+        <li><a href="http://localhost:3000/html/home.html">Início</a></li>
+        <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
+        <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
+        <li><a href="http://localhost:3000/html/login.html">Login</a></li>
+        <li><div class="botao_tema">
+                <div class="trilho" id="trilho">
+                    <img id="themeIcon" src="../images/pikachu.png" alt="Ícone do tema" class="theme-icon">
+                </div>
+            </div>
+        <li><img src="../images/speaker1.png" alt="Controlador de Música" id="musicControlIcon" class="music-control-icon" /></li>
+        </li>
+    </ul>
+    </nav>
 
     <div class="container">
         <h1>Cadastro</h1>
@@ -49,13 +55,6 @@
         </form>
         <p class="pbody">Já tem uma conta? <a href="../html/login.html">Faça login aqui.</a></p>
     </div>
-
-    <!-- JavaScript opcional para validação adicional ou interação -->
-    <div class="botao_tema">
-        <div class="trilho" id="trilho">
-            <div class="indicador"></div>
-        </div>
-    </div> 
 
         <script src="../js/darkMode.js"></script>
 

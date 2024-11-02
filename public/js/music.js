@@ -1,21 +1,22 @@
-// Seleciona o elemento de áudio e o botão de pausa
+// Seleciona o elemento de áudio e o ícone de controle de música
 const music = document.getElementById('backgroundMusic');
-const pauseButton = document.getElementById('pausePlayBtn');
+const musicControlIcon = document.getElementById('musicControlIcon');
 
-// Ajusta o volume e inicia a reprodução
-music.volume = 0.3;
+// Ajusta o volume e inicia a reprodução da música
+music.volume = 0.1;
 music.play();
+musicControlIcon.src = '../images/speaker1.png'; // Ícone de "tocando"
 
 // Função para alternar entre pausar e tocar
 const toggleMusic = () => {
   if (music.paused) {
     music.play();
-    pauseButton.textContent = 'Pause Music';
+    musicControlIcon.src = '../images/speaker1.png'; // Ícone de "tocando"
   } else {
     music.pause();
-    pauseButton.textContent = 'Play Music';
+    musicControlIcon.src = '../images/speakermute1.png'; // Ícone de "mudo"
   }
 };
 
-// Define o evento de clique para o botão de pausa
-pauseButton.addEventListener('click', toggleMusic);
+// Define o evento de clique para o ícone de controle de música
+musicControlIcon.addEventListener('click', toggleMusic);

@@ -1,89 +1,113 @@
+/* Modo claro (padrão) */
 .container {
     background-color: rgba(255, 255, 255, 0.9); /* Caixa branca com leve transparência */
-    border-radius: 15px; /* Aumenta o arredondamento dos cantos */
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2); /* Sombra mais suave e difusa */
-    padding: 40px; /* Preenchimento interno */
-    width: 90%; /* Largura da caixa */
-    max-width: 400px; /* Largura máxima */
-    text-align: center; /* Centraliza o texto */
-    margin: 80px auto; /* Centraliza a caixa na tela */
-    animation: fadeIn 0.5s; /* Animação ao aparecer */
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    padding: 40px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    margin: 80px auto;
+    animation: fadeIn 0.5s;
 }
 
 /* Animação de Fade In */
 @keyframes fadeIn {
     from {
-        opacity: 0; /* Começa invisível */
-        transform: translateY(-20px); /* Move um pouco para cima */
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
-        opacity: 1; /* Termina visível */
-        transform: translateY(0); /* Retorna à posição original */
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
 /* Estilo do título */
 h1 {
-    margin-bottom: 20px; /* Espaço abaixo do título */
-    color: #212121; /* Cor do título */
-    font-weight: 600; /* Título em negrito */
-    font-size: 24px; /* Tamanho do título */
+    margin-bottom: 20px;
+    color: #212121;
+    font-weight: 600;
+    font-size: 24px;
 }
 
 /* Estilo das labels */
 label {
-    display: block; /* Faz os labels ocuparem toda a linha */
-    margin: 10px 0 5px; /* Espaçamento */
-    color: #333; /* Cor do texto */
+    display: block;
+    margin: 10px 0 5px;
+    color: #333;
 }
 
 /* Estilo dos inputs */
 input {
-    width: 100%; /* Largura total */
-    padding: 12px; /* Preenchimento interno */
-    border: 1px solid #ccc; /* Borda padrão */
-    border-radius: 5px; /* Cantos arredondados */
-    margin-bottom: 15px; /* Espaço abaixo dos inputs */
-    transition: border-color 0.3s, box-shadow 0.3s; /* Transições suaves */
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
-/* Foco nos inputs */
 input:focus {
-    border-color: #fdc94c; /* Cor da borda ao focar */
-    box-shadow: 0 0 5px rgba(253, 201, 76, 0.5); /* Sombra ao focar */
-    outline: none; /* Remove o contorno padrão */
+    border-color: #fdc94c;
+    box-shadow: 0 0 5px rgba(253, 201, 76, 0.5);
+    outline: none;
 }
 
 /* Estilo do botão */
 button {
-    background-color: #e29b15; /* Cor de fundo do botão */
-    color: white; /* Cor do texto do botão */
-    border: none; /* Remove borda padrão */
-    padding: 12px 20px; /* Preenchimento interno do botão */
-    border-radius: 5px; /* Cantos arredondados */
-    cursor: pointer; /* Muda o cursor ao passar */
-    transition: background-color 0.3s, transform 0.2s; /* Transições suaves */
-    width: 100%; /* Largura total do botão */
+    background-color: #e29b15;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%;
 }
 
-/* Hover no botão */
 button:hover {
-    background-color: #c77a12; /* Cor ao passar o mouse */
-    transform: translateY(-2px); /* Levanta o botão levemente ao passar o mouse */
+    background-color: #c77a12;
+    transform: translateY(-2px);
 }
 
 /* Estilo do parágrafo */
 .pbody {
-    margin-top: 20px; /* Espaço acima do parágrafo */
+    margin-top: 20px;
 }
 
-/* Estilo do link no parágrafo */
 .pbody a {
-    color: #e29b15; /* Cor do link */
-    text-decoration: none; /* Remove sublinhado */
+    color: #e29b15;
+    text-decoration: none;
 }
 
-/* Hover no link do parágrafo */
 .pbody a:hover {
-    text-decoration: underline; /* Sublinha ao passar o mouse */
+    text-decoration: underline;
+}
+
+/* Modo escuro */
+body.dark .container {
+    background-color: #0d1b2a; /* Azul escuro */
+    color: white;
+}
+
+body.dark h1,
+body.dark label,
+body.dark .pbody,
+body.dark .navbar a {
+    color: white;
+}
+
+body.dark input {
+    background-color: #1a2a3a;
+    color: white;
+    border: 1px solid #fdc94c;
+}
+
+body.dark button {
+    background-color: #c77a12;
+}
+
+body.dark .pbody a {
+    color: #fdc94c;
 }

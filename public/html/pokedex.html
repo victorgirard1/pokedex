@@ -25,7 +25,13 @@
             <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
             <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
             <li><a href="http://localhost:3000/html/login.html">Login</a></li>
-            <li><button class="pause-btn" id="pausePlayBtn">Pause Music</button></li>
+            <li><div class="botao_tema">
+                <div class="trilho" id="trilho">
+                    <img id="themeIcon" src="../images/pikachu.png" alt="Ícone do tema" class="theme-icon">
+                </div>
+            </div>
+        <li><img src="../images/speaker1.png" alt="Controlador de Música" id="musicControlIcon" class="music-control-icon" /></li>
+        </li>
         </ul>
     </nav>
 
@@ -50,13 +56,16 @@
 
         <!-- Botões para avançar e voltar pokemons -->
         <div class="buttons">
-            <button class="button btn-prev">Prev &lt;</button>
-            <button class="button btn-next">Next &gt;</button>
+            <button class="button btn-prev">&lt; Anterior</button>
+            <button class="button btn-next">Próximo &gt;</button>
         </div>
 
         <!-- imagem da pokedex -->
         <img src="../images/pokedex.png" alt="Pokedex" class="pokedex">
     </main>
+
+            <!-- Importa o darkMode.js para mudar o tema -->
+            <script src="../js/darkMode.js"></script>
 
     <footer class="rodape">
         <div class="texto_rodape">
