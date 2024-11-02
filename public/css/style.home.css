@@ -45,3 +45,25 @@ label{
     
     box-shadow: -3px 3px 0 #727272, -5px 6px 0 #333;
 }
+
+.scroll-container {
+    width: 300px;         /* Largura do contêiner */
+    height: 400px;        /* Altura do contêiner */
+    overflow: auto;       /* Adiciona rolagem se necessário */
+    border: 1px solid #ccc; /* Opcional: borda para visualização */
+    padding: 10px;       /* Espaçamento interno */
+}
+
+/* Para navegadores baseados em WebKit (Chrome, Safari) */
+.scroll-container::-webkit-scrollbar {
+    width: 10px; /* Largura da barra de rolagem */
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+    background: #888; /* Cor da barra de rolagem */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Cor ao passar o mouse */
+}

@@ -9,9 +9,10 @@
 
   <!-- Importa o music.js para controle da música -->
   <script src="../js/music.js" defer></script>
+  <!-- Importa o localStorage.js para controle da navegação -->
+  <script src="../js/localStorage.js" defer></script>
   
-  <title>4Poke - Login</title>
-  
+  <title>4Poke - O melhor site de pokémons!</title>
 </head>
 <body>
 
@@ -19,17 +20,27 @@
   <nav class="navbar">
     <ul>
       <li><img src="../images/pokebola.png" alt="Logo" class="logo"/></li>
-      <li><a href="http://localhost:3000/html/home.html">Home</a></li>
-      <li><a href="http://localhost:3000/html/pokedex.html">Pokédex</a></li>
-      <li><a href="http://localhost:3000/html/cadastro.html">Cadastro</a></li>
-      <li><a href="http://localhost:3000/html/login.html">Login</a></li>
+
+      <li><a href="http://localhost:3000/html/home.html">
+          <img src="../images/home.png" alt="Ícone Home" class="home-icon"/>Home</a></li>   
+
+      <li><a href="http://localhost:3000/html/pokedex.html">
+          <img src="../images/pokedex-icon.png" alt="Ícone Pokédex" class="pokedex-icon"/>Pokédex</a></li>
+
+      <li><a href="http://localhost:3000/html/cadastro.html">
+        <img src="../images/login-icon.png" alt="Ícone Cadastro" class="cadastro-icon"/>Cadastro</a></li>
+
+
+      <li><a href="http://localhost:3000/html/login.html">
+        <img src="../images/login-man.png" alt="Ícone Login" class="login-man"/>Login</a></li>
+
       <li><div class="botao_tema">
         <div class="trilho" id="trilho">
             <img id="themeIcon" src="../images/pikachu.png" alt="Ícone do tema" class="theme-icon">
         </div>
-    </div>
-<li><img src="../images/speaker1.png" alt="Controlador de Música" id="musicControlIcon" class="music-control-icon" /></li>
-</li>
+      </div>
+      <li><img src="../images/speaker1.png" alt="Controlador de Música" id="musicControlIcon" class="music-control-icon" /></li>
+      </li>
     </ul>
   </nav>
 
@@ -37,8 +48,13 @@
     <h1>Bem-vindo ao início da sua jornada Pokémon!</h1>
   </div>
 
-        <!-- Importa o darkMode.js para mudar o tema -->
-        <script src="../js/darkMode.js"></script>
+  <div class="scroll-container">
+    <p>Trabalho feito para disciplina de Desenvolvimento Web</p>
+    <p>O 4Poke é uma aplicação web com uma Pokédex interativa, desenvolvida com foco em praticar conceitos de autenticação, banco de dados e consumo de APIs.</p>
+    <p>A aplicação conta com uma página inicial informativa, e permite que usuários se cadastrem, façam login e, após autenticados, possam buscar informações sobre diferentes Pokémon na Pokédex.</p>
+  </div>
+
+  <script src="../js/darkMode.js"></script>
 
   <footer class="rodape">
     <div class="texto_rodape">
@@ -49,6 +65,5 @@
 
   <!-- Elemento de áudio com id para controle da música -->
   <audio id="backgroundMusic" src="../music/pokemon.mp3" loop></audio>
-
 </body>
 </html>
