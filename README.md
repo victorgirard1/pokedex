@@ -43,6 +43,7 @@ CREATE TABLE usuarios (
 id SERIAL PRIMARY KEY,           -- ID autoincremental para identificar o usuário  
 nome_usuario VARCHAR(50) NOT NULL, -- Nome de usuário (máximo 50 caracteres)  
 senha VARCHAR(100) NOT NULL,      -- Senha do usuário (pode armazenar hash da senha)  
+email VARCHAR(255) NOT NULL  
 );  
 
 4. **Configurar o arquivo de conexão:** No diretório raíz do projeto abra o arquivo index.js, e altere os dados de conexão com o PostgreSQL. Adicione seu usuário, senha e nome do banco de dados PostgreSQL.  
